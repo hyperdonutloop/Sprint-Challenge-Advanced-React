@@ -14,8 +14,10 @@ class PlayerData extends React.Component {
     axios
     .get('http://localhost:5000/api/players')
     .then(response => {
+      console.log(response);
+      
       this.setState({
-        players: [response.data]
+        players: response.data
       })
     })
     .catch(error => {
