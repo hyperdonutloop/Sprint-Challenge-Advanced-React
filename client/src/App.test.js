@@ -11,14 +11,16 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+// Write some testing - MVP Requirement #4 ✅
 
+//test #1
 it('renders an element with text "womens world cup" text', () => {
   const wrapper = rtl.render(
   <PlayerData />
   );
   expect(wrapper.getByText(/women's world cup/i));
 });
-
+//test 2
 describe('player data module', () => {
   describe('player information', () => {
     it('has a player with the name "Alex Morgan"', () => {
